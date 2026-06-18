@@ -31,6 +31,12 @@ machine you install them on:
 - **Claude Code.**
 - **The `superpowers` plugin** — `autopilot` invokes its `writing-plans` and
   `executing-plans` skills. Without it, those phases of the chain won't run.
+  It's a Claude Code plugin, so install it from **inside Claude Code** (the
+  installer scripts here detect it and remind you if it's missing):
+  ```
+  /plugin marketplace add obra/superpowers-marketplace
+  /plugin install superpowers@superpowers-marketplace
+  ```
   See [obra/superpowers](https://github.com/obra/superpowers).
 - **Runtime tooling for `spec-review`**, since it *runs* the build: Node and/or
   the relevant toolchain for your project, a browser or the Claude Preview MCP
